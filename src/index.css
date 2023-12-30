@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root{
+  --cyan: hsl(171, 66%, 44%);
+  --blue:  hsl(233, 100%, 69%);
+  --dark-grayish-blue: hsl(210, 10%, 33%); 
+  --grayish-blue:   hsl(201, 11%, 66%);
+}
+
+body{
+  font-size: 1.125rem;
+  font-family: 'Bai Jamjuree', sans-serif;
+  line-height: 1.6;
+}
+
+.btn {
+	display: inline-block;
+	border: 0;
+	background: 0;
+	padding: .5em 1.5em;
+	font-size: 1.125rem;
+	font-weight: 700;
+	transition: 250ms;
+}
+
+.btn:hover{
+  opacity: .9; 
+}
+
+footer a{
+  transition: color 250ms;
+}
+
+.social-list,
+.footer__link {
+  color: var(--dark-grayish-blue);
+}
+
+.social-list a:hover,
+.footer__link:hover {
+  color: var(--cyan);
+  cursor: pointer;
+}
+
+.flow-content--s > * + *  {
+	margin-top: .5rem !important;
+}
+.flow-content--m > * + *  {
+	margin-top: 1rem !important;
+}
+.flow-content--xm > * + *  {
+	margin-top: 1.5rem !important;
+}
+.flow-content--l > * + *  {
+	margin-top: 3rem !important;
+}
+.flow-content--xl > * + *  {
+	margin-top: 3.5rem !important;
+}
+
+.title{
+  color: var(--dark-grayish-blue);
+  font-weight: 700;
+}
+
+.description{
+  color: var(--grayish-blue);
+}
+
+.footer__link{
+  color: var(--dark-grayish-blue);
+}
+
+
+.btn--primary{
+  @apply text-white rounded-full;
+  background: var(--cyan);
+}
+
+.btn--secondary{
+  @apply text-white rounded-full;
+  background: var(--blue);
+}
